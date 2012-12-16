@@ -3,7 +3,7 @@
   "repo": "matthewmueller/frequency-list",
   "description": "create frequency lists",
   "version": "0.0.1",
-  "keywords": [],
+  "keywords": ["list", "frequency", "frequency-list", "occurences"],
   "dependencies": {},
   "development": {},
   "license": "MIT",
