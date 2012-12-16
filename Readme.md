@@ -18,7 +18,7 @@ list.size('hi') // 2
 list.size('oh no') // 0
 
 list.remove('hi')
-list.size('hi') // 1
+list.unique('hi') // true
 ```
 
 ## Installation
