@@ -6,7 +6,8 @@
 ## Example
 
 ```js
-var list = new FrequencyList;
+var FrequencyList = require('frequency-list'),
+    list = new FrequencyList;
 
 list.add('hi')
     .add('how are you')
