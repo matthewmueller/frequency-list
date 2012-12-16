@@ -1,0 +1,31 @@
+<html>
+<head>
+  <title>frequency-list component</title>
+  <link rel="stylesheet" href="../build/build.css">
+</head>
+<body>
+  <h1>frequency-list component</h1>
+  <script src="../build/build.js" type="text/javascript"></script>
+  <script type="text/javascript">
+    var FrequencyList = require('frequency-list'),
+        list = new FrequencyList;
+
+    list.add('hi')
+        .add('how are you')
+        .add('whats up')
+        .add('hi');
+
+    var h = list.has('how are you') // true
+    var s1 = list.size('hi') // 2
+    var s2 = list.size('oh no') // 0
+    var s3 = list.size('whats up')
+    var u1 = list.unique('hi'); // false
+
+    list.remove('hi')
+    var s4 = list.size('hi') // 1
+    var u2 = list.unique('hi'); // true
+
+    console.log(h, s1, s2, s3, s4, u1, u2);
+  </script>
+</body>
+</html>
