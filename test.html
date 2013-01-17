@@ -1,11 +1,11 @@
 <html>
 <head>
   <title>frequency-list component</title>
-  <link rel="stylesheet" href="../build/build.css">
+  <link rel="stylesheet" href="build/build.css">
 </head>
 <body>
   <h1>frequency-list component</h1>
-  <script src="../build/build.js" type="text/javascript"></script>
+  <script src="build/build.js" type="text/javascript"></script>
   <script type="text/javascript">
     var FrequencyList = require('frequency-list'),
         list = new FrequencyList;
@@ -25,7 +25,8 @@
     var s4 = list.size('hi') // 1
     var u2 = list.unique('hi'); // true
 
-    console.log(h, s1, s2, s3, s4, u1, u2);
+    if (typeof console !== 'undefined') console.log(h, s1, s2, s3, s4, u1, u2);
+    window.testsPassed = h === true && s1 === 2 && s2 === 0 && s3 === 1 && s4 === 1 && u1 === false && u2 === true;
   </script>
 </body>
 </html>
